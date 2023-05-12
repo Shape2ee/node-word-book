@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'http://my-word-book.vercel.app',
     credentials: true,
   })
 )
