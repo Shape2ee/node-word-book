@@ -22,6 +22,24 @@ const usersRoute = [
       res.send(user)
     }
   },
+  {
+    method: 'post',
+    route: '/users',
+    handler: ({ body }, res) => {
+      try { 
+        const users = getUsers()
+        const newUser = {
+          userId: body.userId,
+          userPw: body.userPw
+        }
+        users.unshift(newUser)
+        setUsers(users)
+        res.send(newUser)
+      } catch (err) {
+        console.error(err)
+      }
+    }
+  }
 ]
 
 export default usersRoute

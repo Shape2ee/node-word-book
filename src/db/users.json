@@ -1,6 +1,1 @@
-[
-  {
-    "userId": "test",
-    "userPw": "test123"
-  }
-]
+[{"userId":"test1234","userPw":"a123456789"},{"userId":"test123","userPw":"a123456789"},{"userId":"test","userPw":"test123"}]
